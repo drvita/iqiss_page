@@ -1,0 +1,27 @@
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+body .ServiciosTitle {
+  margin-top: 5%;
+}
+body .ProyectoTitle {
+  margin-top: 10%;
+}
+
+@media (max-width: 990px) {
+  body {
+    font-family: "Nunito", sans-serif;
+  }
+  body .ServiciosTitle {
+    margin-top: 10%;
+  }
+  body .ProyectoTitle {
+    margin-top: 15%;
+  }
+}
+
+/*# sourceMappingURL=ownStyles.css.map */
