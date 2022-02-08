@@ -99,12 +99,12 @@ body .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 7.5%;
+  background-color: #01012F;
 }
 body .footer .mainFooter {
   max-width: 1440px;
   width: 100%;
-  background-color: #01012F;
   color: white;
   display: flex;
   padding: 2% 0 1.5% 1%;
@@ -144,10 +144,80 @@ body .footer .mainFooter .rightContent {
   align-items: center;
   border-left: 2px solid #007BFF;
 }
+body .contactForm {
+  width: 100%;
+  padding-left: 2.5%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+body .contactForm form {
+  width: 55%;
+}
+body .mainTitleLandings {
+  max-width: 1440px;
+  padding: 0% 5% 2% 5%;
+  border-bottom: 2px solid gray;
+}
+body .mainTitleLandings .h1 {
+  font-size: 3rem;
+  color: #007BFF;
+  font-weight: 800;
+}
+body .landingBanner {
+  max-width: 1440px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  margin-top: 15%;
+}
+body .landingBanner .imgBanner {
+  width: 30%;
+}
+body .landingBanner .imgBanner .roundedDiv {
+  background-color: orange;
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 100% auto;
+  background-image: url(../IMG/googleBanner.jpg);
+}
+body .landingBanner .imgBanner .roundedDiv img {
+  width: 100%;
+}
+body .landingBanner .infoBanner {
+  width: 70%;
+}
+body .landingBanner .infoBanner .h2 {
+  color: #FF6900;
+}
 
 @media (max-width: 991px) {
   body {
     font-family: "Nunito", sans-serif;
+  }
+  body .contactForm {
+    width: 100%;
+    padding-left: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .contactForm p {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  body .contactForm form {
+    width: 90%;
+  }
+  body .contactForm form button {
+    align-self: center;
+    width: 100%;
   }
   body .MainBar {
     width: 100%;
@@ -181,9 +251,6 @@ body .footer .mainFooter .rightContent {
   }
   body .ProyectoTitle {
     margin-top: 5%;
-  }
-  body .footer {
-    margin-top: 15%;
   }
   body .footer .mainFooter {
     flex-direction: column;
