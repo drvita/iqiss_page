@@ -3,70 +3,116 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: "Nunito", sans-serif;
+}
+body .card-title img {
+  width: 50px;
+}
+body .card-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body .MainBar {
   width: 100%;
+  max-width: 1440px;
   display: flex;
-  padding: 1%;
+  padding: 1.5%;
 }
 body .MainBar .brandDescription {
   width: 80%;
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-end;
+}
+body .MainBar .brandDescription a {
+  text-decoration: none;
 }
 body .MainBar .brandDescription a img {
   width: 70px;
 }
 body .MainBar .brandDescription .linkDescription {
   margin-left: 1%;
+  margin-bottom: 25px;
+  text-decoration: none;
+  color: black;
+  font-size: larger;
 }
 body .MainBar .buttonContact {
   width: 20%;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+}
+body .MainBar .buttonContact a {
+  text-decoration: none;
 }
 body .MainBar .buttonContact a span {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+body .MainBar .buttonContact a span img {
+  width: 20px;
+}
 body .ServiciosTitle {
-  margin-top: 5%;
+  margin-top: 7%;
+  max-width: 1440px;
 }
 body .ProyectoTitle {
-  margin-top: 10%;
+  max-width: 1440px;
+  width: 100%;
+  margin-top: 5%;
+}
+body .tarjetas {
+  max-width: 1440px;
+}
+body .tarjetas .cardService a {
+  text-decoration: none;
 }
 body .ContactanosBottom {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 10%;
+  margin-top: 13%;
 }
 body .ContactanosBottom a {
   width: 250px;
   display: flex;
   justify-content: center;
+  text-decoration: none;
 }
 body .ContactanosBottom a span {
   width: 70%;
   font-size: larger;
 }
-body .mainFooter {
+body .ContactanosBottom a span img {
+  width: 20px;
+}
+body .footer {
   width: 100%;
-  margin-bottom: -20px;
-  margin-top: 15%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+body .footer .mainFooter {
+  max-width: 1440px;
+  width: 100%;
   background-color: #01012F;
   color: white;
   display: flex;
-  padding: 2% 0% 1.5% 1%;
+  padding: 2% 0 1.5% 1%;
 }
-body .mainFooter .leftContent {
+body .footer .mainFooter .leftContent {
   width: 70%;
 }
-body .mainFooter .leftContent .nosotrosTitle {
+body .footer .mainFooter .leftContent .nosotrosTitle {
   width: 100%;
   font-size: larger;
   font-weight: 700;
@@ -74,34 +120,24 @@ body .mainFooter .leftContent .nosotrosTitle {
   margin-left: 2.5%;
   padding-left: 1.7%;
 }
-body .mainFooter .leftContent .nosotrosInfo {
+body .footer .mainFooter .leftContent .nosotrosInfo {
   width: 60%;
   display: flex;
   justify-content: space-evenly;
 }
-body .mainFooter .leftContent .nosotrosInfo .one {
+body .footer .mainFooter .leftContent .nosotrosInfo .one {
   width: 45%;
 }
-body .mainFooter .leftContent .nosotrosInfo .one p {
+body .footer .mainFooter .leftContent .nosotrosInfo .one p {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-body .mainFooter .leftContent .nosotrosInfo .one p img {
+body .footer .mainFooter .leftContent .nosotrosInfo .one p img {
   margin-right: 4%;
+  width: 16px;
 }
-body .mainFooter .leftContent .nosotrosInfo .two {
-  width: 45%;
-}
-body .mainFooter .leftContent .nosotrosInfo .two p {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-body .mainFooter .leftContent .nosotrosInfo .two p img {
-  margin-right: 4%;
-}
-body .mainFooter .rightContent {
+body .footer .mainFooter .rightContent {
   width: 30%;
   display: flex;
   justify-content: center;
@@ -120,7 +156,10 @@ body .mainFooter .rightContent {
   body .MainBar .brandDescription {
     width: 100%;
     align-items: center;
-    margin: 5% 0% 3% 0%;
+    margin: 5% 0 3%;
+  }
+  body .MainBar .brandDescription .linkDescription {
+    margin-top: 5%;
   }
   body .MainBar .brandDescription a {
     text-decoration: none;
@@ -138,31 +177,34 @@ body .mainFooter .rightContent {
     align-items: flex-end;
   }
   body .ServiciosTitle {
-    margin-top: 5%;
+    margin-top: 8%;
   }
   body .ProyectoTitle {
+    margin-top: 5%;
+  }
+  body .footer {
     margin-top: 15%;
   }
-  body .mainFooter {
+  body .footer .mainFooter {
     flex-direction: column;
-    padding: 0%;
+    padding: 0;
   }
-  body .mainFooter .leftContent {
+  body .footer .mainFooter .leftContent {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  body .mainFooter .leftContent .nosotrosTitle {
+  body .footer .mainFooter .leftContent .nosotrosTitle {
     width: 54%;
     font-weight: 700;
     border-bottom: 3px solid #007BFF;
-    border-left: 0px;
+    border-left: 0;
     margin-top: 5%;
-    padding: 0%;
+    padding: 0;
   }
-  body .mainFooter .leftContent .nosotrosInfo {
+  body .footer .mainFooter .leftContent .nosotrosInfo {
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -170,34 +212,24 @@ body .mainFooter .rightContent {
     align-items: center;
     margin-top: 5%;
   }
-  body .mainFooter .leftContent .nosotrosInfo .one {
+  body .footer .mainFooter .leftContent .nosotrosInfo .one {
     width: 55%;
   }
-  body .mainFooter .leftContent .nosotrosInfo .one p {
+  body .footer .mainFooter .leftContent .nosotrosInfo .one p {
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
-  body .mainFooter .leftContent .nosotrosInfo .one p img {
+  body .footer .mainFooter .leftContent .nosotrosInfo .one p img {
     margin-right: 4%;
+    width: 16px;
   }
-  body .mainFooter .leftContent .nosotrosInfo .two {
-    width: 55%;
-  }
-  body .mainFooter .leftContent .nosotrosInfo .two p {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  body .mainFooter .leftContent .nosotrosInfo .two p img {
-    margin-right: 4%;
-  }
-  body .mainFooter .rightContent {
+  body .footer .mainFooter .rightContent {
     width: 100%;
     margin-top: 5%;
-    border-left: 0px;
+    border-left: 0;
   }
-  body .mainFooter .rightContent p {
+  body .footer .mainFooter .rightContent p {
     text-align: center;
     width: 40%;
     margin-top: 5%;

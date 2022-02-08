@@ -1,243 +1,270 @@
 
-*{
+* {
     font-family: 'Nunito', sans-serif;
 }
 
-body{
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .card-title{
+        img{
+            width: 50px;
+        }
+    }
+    
+    .card-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     font-family: 'Nunito', sans-serif;
 
-    .MainBar{
+    .MainBar {
         width: 100%;
+        max-width: 1440px;
         display: flex;
-        padding: 1%;
-        .brandDescription{
+        padding: 1.5%;
+        .brandDescription {
             width: 80%;
             display: flex;
-            flex-direction: column;
             justify-content: flex-start;
-            a{
-                img{
+            align-items: flex-end;
+            a {
+                text-decoration: none;
+                img {
                     width: 70px;
-                    
+
                 }
             }
-            .linkDescription{
+            .linkDescription {
                 margin-left: 1%;
+                margin-bottom: 25px;
+                text-decoration: none;
+                color: black;
+                font-size: larger;
             }
         }
-        .buttonContact{
+        .buttonContact {
             width: 20%;
             display: flex;
             justify-content: center;
-            align-items: flex-end;
-            a{
-                span{
+            align-items: center;
+            a {
+                text-decoration: none;
+                span {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    img{
+                        width: 20px;
+                    }
                 }
             }
         }
     }
 
-    .ServiciosTitle{
+    .ServiciosTitle {
+        margin-top: 7%;
+        max-width: 1440px;
+    }
+
+    .ProyectoTitle {
+        max-width: 1440px;
+        width: 100%;
         margin-top: 5%;
+    }
+
+    .tarjetas{
+        max-width: 1440px;
+        .cardService{
+            a{
+                text-decoration: none;
+            }
+        }
 
     }
 
-    .ProyectoTitle{
-        margin-top: 10%;
-    }
-
-    .ContactanosBottom{
+    .ContactanosBottom {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 10%;
-        a{
+        margin-top: 13%;
+        a {
             width: 250px;
             display: flex;
             justify-content: center;
-            span{
+            text-decoration: none;
+            span {
                 width: 70%;
                 font-size: larger;
+                img{
+                    width: 20px;
+                }
             }
         }
     }
 
-    .mainFooter{
+    .footer {
         width: 100%;
-        margin-bottom: -20px;
-        margin-top: 15%;
-        background-color:#01012F;
-        color: white;
+        height: auto;
         display: flex;
-        padding: 2% 0% 1.5% 1%;
-        .leftContent{
-            width: 70%;
-            .nosotrosTitle{
-                width: 100%;
-                font-size: larger;
-                font-weight: 700;
-                border-left: 3px solid #007BFF;
-                margin-left: 2.5%;
-                padding-left: 1.7%;
-            }
-
-            .nosotrosInfo{
-                width: 60%;
-                display: flex;
-                justify-content: space-evenly;
-                .one{
-                    width: 45%;
-                    
-                    p{
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
-                        img{
-                            margin-right: 4%;
-                        }
-                        
-                    }
-                }
-                .two{
-                    width: 45%;
-                    p{
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
-                        img{
-                            margin-right: 4%;
-                        }
-                    }
-                    
-                }
-            }
-        }
-        .rightContent{
-            width: 30%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        .mainFooter {
+            max-width: 1440px;
+            width: 100%;
+            background-color: #01012F;
+            color: white;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            border-left: 2px solid #007BFF;
+            padding: 2% 0 1.5% 1%;
+            .leftContent {
+                width: 70%;
+                .nosotrosTitle {
+                    width: 100%;
+                    font-size: larger;
+                    font-weight: 700;
+                    border-left: 3px solid #007BFF;
+                    margin-left: 2.5%;
+                    padding-left: 1.7%;
+                }
+
+                .nosotrosInfo {
+                    width: 60%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    .one {
+                        width: 45%;
+
+                        p {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            img {
+                                margin-right: 4%;
+                                width: 16px;
+                            }
+
+                        }
+                    }
+                }
+            }
+            .rightContent {
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-left: 2px solid #007BFF;
+            }
         }
     }
+
 }
 
-
 @media (max-width: 991px) {
-   
-body{
 
-    font-family: 'Nunito', sans-serif;
+    body {
 
-        .MainBar{
+        font-family: 'Nunito', sans-serif;
+
+        .MainBar {
             width: 100%;
             flex-direction: column;
-            .brandDescription{
+            .brandDescription {
                 width: 100%;
                 align-items: center;
-                margin: 5% 0% 3% 0%;
-                a{
+                margin: 5% 0 3%;
+                .linkDescription{
+                    margin-top: 5%;
+                }
+                a {
                     text-decoration: none;
                     color: black;
                     font-size: large;
-                    img{
+                    img {
                         width: 90px;
                         height: 90px;
                     }
                 }
-                
+
             }
-            .buttonContact{
+            .buttonContact {
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: flex-end;
             }
         }
-        
-        .ServiciosTitle{
+
+        .ServiciosTitle {
+            margin-top: 8%;
+        }
+
+        .ProyectoTitle {
             margin-top: 5%;
-
         }
 
-        .ProyectoTitle{
+        .footer {
             margin-top: 15%;
-        }
-
-
-        .mainFooter{
-            flex-direction: column;
-            padding: 0%;
-            .leftContent{
-                width: 100%;
-                display: flex;
+            .mainFooter {
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                .nosotrosTitle{
-                    width:54%;
-                    font-weight: 700;
-                    border-bottom: 3px solid #007BFF;
-                    border-left: 0px;
-                    margin-top: 5%;
-                    padding: 0%;
-                }
-    
-                .nosotrosInfo{
-                    width: 90%;
+                padding: 0;
+                .leftContent {
+                    width: 100%;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-evenly;
+                    justify-content: center;
                     align-items: center;
-                    margin-top: 5%;
-                    .one{
-                        width:55%;
-                        p{
-                            display: flex;
-                            justify-content: flex-start;
-                            align-items: center;
-                            img{
-                                margin-right: 4%;
-                            }
-                            
-                        }
+                    .nosotrosTitle {
+                        width: 54%;
+                        font-weight: 700;
+                        border-bottom: 3px solid #007BFF;
+                        border-left: 0;
+                        margin-top: 5%;
+                        padding: 0;
                     }
-                    .two{
-                        width: 55%;
-                        p{
-                            display: flex;
-                            justify-content: flex-start;
-                            align-items: center;
-                            img{
-                                margin-right: 4%;
+
+                    .nosotrosInfo {
+                        width: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        margin-top: 5%;
+                        .one {
+                            width: 55%;
+                            p {
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                img {
+                                    margin-right: 4%;
+                                    width: 16px;
+                                }
+
                             }
                         }
-                        
                     }
                 }
-            }
-            .rightContent{
-                width: 100%;
-                margin-top: 5%;
-                border-left: 0px;
-                p{
-                    text-align: center;
-                    width: 40%;
+                .rightContent {
+                    width: 100%;
                     margin-top: 5%;
-                    padding-top: 5%;
-                    padding-bottom: 5%;
-                    border-top: 3px solid #007BFF;
+                    border-left: 0;
+                    p {
+                        text-align: center;
+                        width: 40%;
+                        margin-top: 5%;
+                        padding-top: 5%;
+                        padding-bottom: 5%;
+                        border-top: 3px solid #007BFF;
+                    }
                 }
             }
         }
-
-
-
 
     }
 
-
-  }
+}
