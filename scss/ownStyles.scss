@@ -168,8 +168,9 @@ body {
 
     //-------------------------Formulario de contacto-----------------//
     .contactForm{
+        max-width: 1440px;
         width: 100%;
-        padding-left: 2.5%;
+        padding-left: 2.4%;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
