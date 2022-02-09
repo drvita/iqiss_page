@@ -159,6 +159,7 @@ body .mainTitleLandings {
   max-width: 1440px;
   padding: 0% 5% 2% 5%;
   border-bottom: 2px solid gray;
+  margin-top: 5%;
 }
 body .mainTitleLandings .h1 {
   font-size: 3rem;
@@ -172,7 +173,7 @@ body .landingBanner {
   justify-content: space-between;
   align-items: center;
   align-self: center;
-  margin-top: 15%;
+  margin-top: 5%;
 }
 body .landingBanner .imgBanner {
   width: 30%;
@@ -195,6 +196,59 @@ body .landingBanner .infoBanner {
 }
 body .landingBanner .infoBanner .h2 {
   color: #FF6900;
+}
+body .SubTitle {
+  max-width: 1440px;
+  display: flex;
+  align-self: center;
+  justify-content: flex-start;
+  margin-top: 10%;
+}
+body .callToAction {
+  width: 80%;
+  max-width: 1440px;
+  display: flex;
+  align-self: center;
+  margin-top: 10%;
+}
+body .callToAction .callText {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+body .callToAction .callText .h2 {
+  color: #FF6900;
+}
+body .callToAction .callButton {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .callToAction .callButton a {
+  font-size: large;
+}
+body .FrequentQuestions {
+  width: 80%;
+  max-width: 1440px;
+  margin-top: 5%;
+}
+body .FrequentQuestions .FrequentQuestionsTitle {
+  width: 100%;
+}
+body .FrequentQuestions .FrequentQuestionsTitle .h2 {
+  color: #01012F;
+}
+body .FrequentQuestions .FrequentQuestionsList h5 {
+  color: black;
+}
+body .FrequentQuestions .FrequentQuestionsList li {
+  color: #FF6900;
+  font-size: large;
+}
+body .FrequentQuestions .FrequentQuestionsList li span {
+  color: #504c4c;
+  font-size: large;
 }
 
 @media (max-width: 991px) {
