@@ -116,8 +116,8 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 7.5%;
         background-color: #01012F;
+        margin-top: 200px;
         .mainFooter {
             max-width: 1440px;
             width: 100%;
@@ -170,6 +170,7 @@ body {
     .contactForm{
         max-width: 1440px;
         width: 100%;
+        margin-top: 3%;
         padding-left: 2.4%;
         display: flex;
         justify-content: flex-start;
@@ -183,7 +184,7 @@ body {
     //-----------------------------Landig Pages-------------------------//
     .mainTitleLandings{
         max-width: 1440px;
-        padding: 0% 5% 2% 5%;
+        margin: 0% 4% 0% 4%;
         border-bottom: 2px solid gray;
         margin-top: 5%;
         .h1{
@@ -211,7 +212,6 @@ body {
                 background-position: 50%;
                 border-radius: 50%;
                 background-size: 100% auto;
-                background-image: url(../IMG/googleBanner.jpg);
                 img{
                     width: 100%;
                 }
@@ -223,6 +223,9 @@ body {
             .h2{
                 color: #FF6900;
             }
+            a{
+                text-decoration: none;
+            }
         }
     }
 
@@ -232,6 +235,7 @@ body {
         align-self: center;
         justify-content: flex-start;
         margin-top: 10%;
+        padding-left: 10.5%;
     }
 
     .callToAction{
@@ -254,6 +258,7 @@ body {
             justify-content: center;
             align-items: center;
             a{
+                text-decoration: none;
                 font-size: large;
             }
         }
