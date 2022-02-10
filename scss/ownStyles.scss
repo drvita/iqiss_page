@@ -420,6 +420,71 @@ body {
             }
         }
 
+
+
+
+        .landingBanner{
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 20%;
+            .imgBanner{
+                width: 100%;
+                .roundedDiv{
+                    margin: auto;
+                }
+            }
+    
+            .infoBanner{
+                width: 100%;
+                margin-top: 10%;
+                text-align: center;
+                .h2{
+                    color: #FF6900;
+                    margin-bottom: 10%;
+                }
+                a{
+                    text-decoration: none;
+                    margin-top: 10%;
+                }
+            }
+        }
+
+        .SubTitle{
+            max-width: 1440px;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            margin-top: 25%;
+            padding-left: 0%;
+        }
+
+
+        .callToAction{
+            flex-direction: column;
+            margin-top: 20%;
+            text-align: center;
+            .callText{
+                width: 100%;
+                justify-content: space-between;
+            }
+            .callButton{
+                width: 100%;
+                margin-top: 5%;
+                margin-bottom: 10%;
+            }
+        }
+
+
+        .mainTitleLandings{
+            .h1{
+                font-size: 2.5rem;
+            }
+            .h4{
+                margin-top: 5%;
+                font-size: 1.3rem;
+            }
+        }
+
     }
 
 }
