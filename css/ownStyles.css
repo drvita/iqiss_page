@@ -9,6 +9,9 @@ body {
   align-items: center;
   font-family: "Nunito", sans-serif;
 }
+body .carrera {
+  color: #FF6900;
+}
 body .card-title {
   display: flex;
   justify-content: center;
