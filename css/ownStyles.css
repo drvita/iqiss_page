@@ -9,12 +9,22 @@ body {
   align-items: center;
   font-family: "Nunito", sans-serif;
 }
+body .card-title {
+  display: flex;
+  justify-content: center;
+}
 body .card-title img {
   width: 50px;
 }
-body .card-title .avatar {
+body .card-title .imgPerson {
   width: 200px;
-  margin-top: 30%;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 20%;
+  background-color: red;
+}
+body .card-title .imgPerson img {
+  width: 100%;
 }
 body .card-text {
   display: flex;
