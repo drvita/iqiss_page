@@ -209,7 +209,7 @@ body .contactForm form {
 }
 body .mainTitleLandings {
   max-width: 1440px;
-  margin: 0% 4% 0% 4%;
+  margin: 0 4%;
   border-bottom: 2px solid gray;
   margin-top: 5%;
 }
@@ -313,7 +313,7 @@ body .FrequentQuestions .FrequentQuestionsList li span {
   }
   body .contactForm {
     width: 100%;
-    padding-left: 0%;
+    padding-left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -420,9 +420,9 @@ body .FrequentQuestions .FrequentQuestionsList li span {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 0px;
-    padding-left: 0%;
-    padding-top: 0%;
+    border-left: 0;
+    padding-left: 0;
+    padding-top: 0;
     margin-top: 10%;
   }
   body .footer .mainFooter .centerContent .nosotros .bottom {
@@ -471,7 +471,7 @@ body .FrequentQuestions .FrequentQuestionsList li span {
     align-self: center;
     justify-content: center;
     margin-top: 25%;
-    padding-left: 0%;
+    padding-left: 0;
   }
   body .callToAction {
     flex-direction: column;
