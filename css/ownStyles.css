@@ -281,6 +281,7 @@ body .callToAction {
   display: flex;
   align-self: center;
   margin-top: 10%;
+  margin-bottom: 10%;
 }
 body .callToAction .callText {
   width: 70%;
